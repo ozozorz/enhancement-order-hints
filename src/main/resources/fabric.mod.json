@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "enhancement-order-hints",
+  "version": "${version}",
+  "name": "Enhancement Order Hints",
+  "description": "在铁砧界面显示最佳附魔顺序，并提供可编辑的附魔方案。",
+  "authors": ["ozozorz"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.ozozorz.enhancementorderhints.EnhancementOrderHintsClient"],
+    "modmenu": ["dev.ozozorz.enhancementorderhints.compat.ModMenuIntegration"]
+  },
+  "mixins": ["enhancement-order-hints.client.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": { "modmenu": ">=18.0.0" }
+}
